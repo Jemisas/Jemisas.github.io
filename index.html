@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Almacenamiento en la Nube</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS para estilos adicionales -->
+  <link rel="icon" href = "icono.ico">
+  <script>
+    function mostrarMensaje() {
+      alert("Gracias, nos contactaremos pronto contigo.");
+      return false; 
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="inicio">
+    <h1>Space Data</h1>
+    <p>Almacena tus archivos de forma segura y accede a ellos en cualquier momento y lugar.</p>
+    <a href="#contacto" class="cta">¡Ponte en contacto!</a>
+  </section>
+  
+  <section id="caracteristicas">
+    <h2>Características</h2>
+    <ul>
+      <li>
+        <img src="almacenamiento-seguro.jpg" alt="Almacenamiento seguro" width="300" height="200">
+        <p>Almacenamiento seguro y confiable</p>
+      </li>
+      <li>
+        <img src="acceso-dispositivos.jpg" alt="Acceso desde cualquier dispositivo" width="300" height="200">
+        <p>Acceso a tus archivos desde cualquier dispositivo</p>
+      </li>
+      <li>
+        <img src="compartir-archivos.png" alt="Compartir archivos y carpetas" width="300" height="200">
+        <p>Comparte archivos y carpetas con facilidad</p>
+      </li>
+      <li>
+        <img src="copias-seguridad.jpg" alt="Copias de seguridad automáticas" width="300" height="200">
+        <p>Realiza copias de seguridad automáticas</p>
+      </li>
+    </ul>
+  </section>
+  
+  <section id="planes">
+    <h2>Planes</h2>
+    <ul>
+      <li>Plan Básico: 20GB de almacenamiento - Gratis</li>
+      <li>Plan Premium: 50GB de almacenamiento - S/.29.99/mes</li>
+      <li>Plan Empresarial: 100GB de almacenamiento - S/.49.99/mes</li>
+    </ul>
+  </section>
+  
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form onsubmit="return mostrarMensaje()">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+  
+  <footer>
+    <p>Derechos de autor &copy; 2023 Space Data</p>
+  </footer>
+</body>
+</html>
