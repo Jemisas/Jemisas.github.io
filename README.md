@@ -1,2 +1,0 @@
-# SpaceData.github.io
-SpaceData 
