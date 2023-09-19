@@ -1,12 +1,11 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+  font-family: "Helvetica", sans-serif;  margin: 0;
   padding: 0;
   background-color: #f2f2f2;
   background-image: url('fondo.gif');
   background-repeat: repeat;
   animation: backgroundAnimation 15s linear infinite;
-  background-position: bottom; 
+  background-position: bottom;  
 }
 
 @keyframes backgroundAnimation {
@@ -23,6 +22,13 @@ header {
   padding: 20px;
 }
 
+header h1 {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -37,17 +43,45 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  padding: 5px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 section {
-  color: #ffffff;
+  color: white;
   padding: 40px;
+}
+
+section p {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #336699;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 20px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #234567;
 }
 
 h1 {
   color: #aad4ff;
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
@@ -62,40 +96,37 @@ p {
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 18px;
   margin-top: 20px;
 }
 
 #caracteristicas ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
 }
 
-#caracteristicas ul li {
-  flex: 1 0 300px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  background-color: #2e5678; 
-  padding: 6px; 
-  border-radius: 10px;
+#caracteristicas li {
+  flex-basis: calc(25% - 20px); /* 25% del ancho de su contenedor menos un espacio de 20px entre ellas */
+  margin-right: 20px; /* Espacio entre imágenes */
 }
 
-#caracteristicas h2 {
-  color: #aad4ff;
-  font-size: 24px;
-  margin-bottom: 20px;
+#caracteristicas li:last-child {
+  margin-right: 0; /* Elimina el margen derecho de la última imagen */
+}
+
+#caracteristicas img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente dentro de su contenedor */
 }
 
 #caracteristicas p {
-  font-size: 15px;
-  color: #ffffff;
-  margin: 0; 
+  text-align: center;
 }
-
 #planes {
   background-color: #f2f2f2;
   padding: 40px;
@@ -117,12 +148,6 @@ p {
   color: #336699;
   font-size: 24px;
   margin-bottom: 20px;
-}
-
-#planes ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 #planes li {
@@ -176,4 +201,29 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* Estilos para los botones de inicio de sesión y registro */
+#botones-esquina {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 9999;
+  transition: top 0.5s ease;
+}
+
+#botones-esquina button {
+  background-color: #373b57;
+  color: #fff;
+  border: none;
+  padding: 7px 18px;
+  border-radius: 20px;
+  font-size: 17px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#botones-esquina button:hover {
+  background-color: #4881ba;
 }

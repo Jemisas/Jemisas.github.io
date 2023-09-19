@@ -5,13 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SpaceData</title>
   <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS para estilos adicionales -->
-  <link rel="icon" href = "icon.ico">
-  <script>
-    function mostrarMensaje() {
-      alert("Gracias, nos contactaremos pronto contigo.");
-      return false; 
-    }
-  </script>
+  <link rel="icon" href="icono.ico">
+  <script src="funciones.js"></script> <!-- Archivo JavaScript con las funciones -->
 </head>
 <body>
   <header>
@@ -21,57 +16,61 @@
         <li><a href="#caracteristicas">Características</a></li>
         <li><a href="#planes">Planes</a></li>
         <li><a href="#contacto">Contacto</a></li>
+<div id="botones-esquina">
+  <button onclick="location.href='iniciar_sesion.html'">Iniciar sesión</button>
+  <button onclick="location.href='registrarse.html'">Registrarse</button>
+</div>
       </ul>
     </nav>
   </header>
-  
   <section id="inicio">
-    <h1>Space Data</h1>
+    <h1>SpaceData</h1>
     <p>Almacena tus archivos de forma segura y accede a ellos en cualquier momento y lugar.</p>
     <a href="#contacto" class="cta">¡Ponte en contacto!</a>
   </section>
-  
   <section id="caracteristicas">
-    <h2>Características</h2>
+    <h2>Beneficios</h2>
     <ul>
       <li>
-        <img src="almacenamiento-seguro.jpg" alt="Almacenamiento seguro" width="300" height="200">
-        <p>Almacenamiento seguro y confiable</p>
+        <img src="seguridad-total.png" alt="Almacenamiento seguro" width="176" height="200">
+        <p>Seguridad total</p>
       </li>
       <li>
-        <img src="acceso-dispositivos.jpg" alt="Acceso desde cualquier dispositivo" width="300" height="200">
-        <p>Acceso a tus archivos desde cualquier dispositivo</p>
+        <img src="respaldo-automatico.png" alt="Acceso desde cualquier dispositivo" width="176" height="150">
+        <p>Respaldo Automático</p>
       </li>
       <li>
-        <img src="compartir-archivos.png" alt="Compartir archivos y carpetas" width="300" height="200">
-        <p>Comparte archivos y carpetas con facilidad</p>
+        <img src="antivirus-integrado.png" alt="Compartir archivos y carpetas" width="176" height="200">
+        <p>Antivirus Integrado</p>
       </li>
       <li>
-        <img src="copias-seguridad.jpg" alt="Copias de seguridad automáticas" width="300" height="200">
-        <p>Realiza copias de seguridad automáticas</p>
+        <img src="agilidad-acceso.png" alt="Copias de seguridad automáticas" width="176" height="200">
+        <p>Agilidad en Acceso</p>
+      </li>
+      <li>
+        <img src="disponibilidad-24horas.png" alt="Disponibilidad 24 Horas" width="176" height="200">
+        <p>Disponibilidad 24 Horas</p>
       </li>
     </ul>
   </section>
-  
   <section id="planes">
     <h2>Planes</h2>
     <ul>
       <li>Plan Básico: 20GB de almacenamiento - Gratis</li>
-      <li>Plan Premium: 50GB de almacenamiento - S/.29.99/mes</li>
-      <li>Plan Empresarial: 100GB de almacenamiento - S/.49.99/mes</li>
+      <li>Plan Estudiante: 150GB de almacenamiento - S/.9.99/mes</li>
+      <li>Plan Premium: 500GB de almacenamiento - S/.29.99/mes</li>
+      <li>Plan Empresarial: 1TB de almacenamiento - S/.49.99/mes</li>
     </ul>
   </section>
-  
   <section id="contacto">
     <h2>Contacto</h2>
-    <form onsubmit="return mostrarMensaje()">
+    <form id="contacto-form" onsubmit="return mostrarMensaje()">
       <input type="text" name="nombre" placeholder="Nombre" required>
       <input type="email" name="email" placeholder="Correo electrónico" required>
       <textarea name="mensaje" placeholder="Mensaje" required></textarea>
       <input type="submit" value="Enviar">
     </form>
-  </section>
-  
+  </section>  
   <footer>
     <p>Derechos de autor &copy; 2023 SpaceData</p>
   </footer>
