@@ -9,15 +9,17 @@
     <title>Formulario Iniciar Sesion</title>
 </head>
 <body>
-    <img src="icono.png" alt="Logo de SpaceData">
-    <section class="form-login"> 
+    <a href="index.html">
+        <img src="iconos/icono.png" alt="Logo de SpaceData">
+    </a>
+        <section class="form-login"> 
         <h4>Iniciar Sesión</h4>
         <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
         <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su contraseña">
         <input type="checkbox" id="show-password">
         <label for="show-password">Mostrar contraseña</label>
         <input class="botons" type="submit" value="Iniciar Sesión" id="login-button">
-        <p><a href="#">¿No tienes cuenta?</a></p>
+        <p><a href="registrarse.html">¿No tienes cuenta?</a></p>
     </section>
     <script>
         const passwordInput = document.getElementById('password');

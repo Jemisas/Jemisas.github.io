@@ -2,45 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-body{
-    background-image: url('fondo.gif');
-    background-size: cover; 
-    background-repeat: no-repeat; 
+
+body {
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-
-
+    padding: 20px; /* Ajusta el relleno del cuerpo según sea necesario */
 }
 
-img {
-    width: 140px; /* Ajusta el ancho de la imagen según tus necesidades */
-    position: absolute; /* Posición absoluta para superponer la imagen */
-    top: 0; /* Ajusta la posición vertical de la imagen (arriba del formulario) */
-    left: 50%; /* Ajusta la posición horizontal de la imagen (centro) */
-    transform: translateX(-50%); /* Centra horizontalmente la imagen */
-}
-
-.form-login{
-    width: 400px;
-    background: #24303c;
+.form-login {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background: #102133;
     padding: 30px;
-    margin: auto;
-    margin-top: 170px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px #131a63;
 }
 
-.form-login h4{
+img {
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 3%;
+    transform: translateX(-50%);
+}
+
+.form-login h4 {
     font-size: 22px;
     margin-bottom: 20px;
 }
 
-.controls{
+.controls {
     width: 100%;
-    background: #24303c;
+    background: #17232f;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
@@ -57,22 +56,35 @@ img {
     line-height: 40px;
 }
 
-.form-login a{
+.form-login a {
     color: white;
     text-decoration: underline;
 }
 
-.form-login .botons{
+.form-login .botons {
     width: 100%;
-    background: #1f53c5;
+    background: #27395d;
     border: none;
     padding: 12px;
     color: white;
     margin: 16px 0;
     font-size: 16px;
-
+    transition: transform 0.3s ease-in-out;
 }
 
+.form-login .botons:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
 
+@media (max-width: 768px) {
+    .form-login {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-
+    img {
+        width: 0;
+    }
+}

@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="icono.ico">
     <link rel="stylesheet" href="style_registrarse.css">
-    <title>Formulario Registro</title>
+    <title>Registrarse</title>
 </head>
 <body>
-    <img src="icono.png" alt="Logo de SpaceData">
+    <a href="index.html">
+        <img src="iconos/icono.png" alt="Logo de SpaceData">
+    </a>
     <section class="form-register"> 
         <h4>Regístrate</h4>
         <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
@@ -20,7 +22,7 @@
         <label for="show-password">Mostrar contraseña</label>
         <p>Estoy de acuerdo con <a href="#">Términos y condiciones </a></p>
         <input class="botons" type="submit" value="Registrar" id="register-button">
-        <p><a href="#">¿Ya tengo cuenta?</a></p>
+        <p><a href="iniciar_sesion.html">¿Ya tengo cuenta?</a></p>
     </section>
     <script>
         const passwordInput = document.getElementById('password');

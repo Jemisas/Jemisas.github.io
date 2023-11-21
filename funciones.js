@@ -12,16 +12,12 @@ function mostrarMensaje() {
 
 function compartirRedesSociales() {
   const mensaje = "¡Echa un vistazo a Space Data! Es la mejor opción para almacenar tus archivos en la nube.";
-  const url = "https://www.spacedata.com"; // Reemplaza con la URL real de tu página web
+  const url = "https://www.spacedata.com"; 
 
-  // Simular la acción de compartir en redes sociales
   console.log("Compartiendo en redes sociales:");
   console.log("- Mensaje: " + mensaje);
   console.log("- URL: " + url);
 }
-
-
-
 
 
 
