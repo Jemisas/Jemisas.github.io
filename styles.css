@@ -649,19 +649,7 @@ section p {
   );
 }
 
-#nosotros {
-  text-align: center; /* Centra el texto dentro de la sección */
-}
 
-h2 {
-  width: 100%; /* Asegura que el título tenga un ancho del 100% */
-}
-
-.persona {
-  display: inline-block; /* Permite que los elementos estén en línea y se superpongan */
-  text-align: center; /* Centra el texto sobre la imagen */
-  margin-right: 120px; /* Ajusta el margen entre cada par de texto e imagen según sea necesario */
-}
 .img-3d {
   position: absolute;
   transform-style: preserve-3d;
